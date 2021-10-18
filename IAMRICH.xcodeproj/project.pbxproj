@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64119A8F271D0976008E3D6E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64119A8E271D0976008E3D6E /* SecondViewController.swift */; };
+		64119A91271D12CE008E3D6E /* CocaViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64119A90271D12CE008E3D6E /* CocaViewViewController.swift */; };
 		64B52D9A271745B70004DD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B52D99271745B70004DD9A /* AppDelegate.swift */; };
 		64B52D9C271745B70004DD9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B52D9B271745B70004DD9A /* SceneDelegate.swift */; };
 		64B52D9E271745B70004DD9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B52D9D271745B70004DD9A /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64119A8E271D0976008E3D6E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		64119A90271D12CE008E3D6E /* CocaViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaViewViewController.swift; sourceTree = "<group>"; };
 		64B52D96271745B70004DD9A /* IAMRICH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAMRICH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B52D99271745B70004DD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B52D9B271745B70004DD9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64119A8D271D0954008E3D6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64B52D9D271745B70004DD9A /* ViewController.swift */,
+				64119A8E271D0976008E3D6E /* SecondViewController.swift */,
+				64119A90271D12CE008E3D6E /* CocaViewViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		64B52D8D271745B60004DD9A = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +113,9 @@
 		64B52D98271745B70004DD9A /* IAMRICH */ = {
 			isa = PBXGroup;
 			children = (
+				64119A8D271D0954008E3D6E /* Controllers */,
 				64B52D99271745B70004DD9A /* AppDelegate.swift */,
 				64B52D9B271745B70004DD9A /* SceneDelegate.swift */,
-				64B52D9D271745B70004DD9A /* ViewController.swift */,
 				64B52D9F271745B70004DD9A /* Main.storyboard */,
 				64B52DA2271745B90004DD9A /* Assets.xcassets */,
 				64B52DA4271745B90004DD9A /* LaunchScreen.storyboard */,
@@ -258,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64119A91271D12CE008E3D6E /* CocaViewViewController.swift in Sources */,
+				64119A8F271D0976008E3D6E /* SecondViewController.swift in Sources */,
 				64B52D9E271745B70004DD9A /* ViewController.swift in Sources */,
 				64B52D9A271745B70004DD9A /* AppDelegate.swift in Sources */,
 				64B52D9C271745B70004DD9A /* SceneDelegate.swift in Sources */,

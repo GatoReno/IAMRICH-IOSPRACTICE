@@ -92,39 +92,43 @@
                         <outlet property="heightSlider" destination="0Qn-Hh-QYn" id="k5k-Gh-YD3"/>
                         <outlet property="widthLabel" destination="uEr-bs-Kgx" id="rDo-Ak-ZFS"/>
                         <outlet property="witdhSlider" destination="G8d-n3-smJ" id="e1p-AF-9JU"/>
+                        <segue destination="qqo-AO-G1K" kind="show" identifier="goToResult" id="eXD-dW-Yd3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106.875" y="89.788732394366193"/>
+            <point key="canvasLocation" x="-276" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Coca View View Controller-->
         <scene sceneID="XzI-70-TDc">
             <objects>
-                <viewController id="qqo-AO-G1K" sceneMemberID="viewController">
+                <viewController id="qqo-AO-G1K" customClass="CocaViewViewController" customModule="IAMRICH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4HC-Il-95U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jel-iF-XK0">
-                                <rect key="frame" x="16" y="449" width="288" height="31"/>
+                                <rect key="frame" x="16" y="429" width="288" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Recalculate"/>
+                                <connections>
+                                    <action selector="RecalciulateAction:" destination="qqo-AO-G1K" eventType="touchUpInside" id="Yth-gi-hSB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-m5-Wlr">
-                                <rect key="frame" x="18" y="295.5" width="284" height="21"/>
+                                <rect key="frame" x="18" y="275.5" width="284" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EAT SOME SNACKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-mk-tje">
-                                <rect key="frame" x="18" y="363.5" width="284" height="14.5"/>
+                                <rect key="frame" x="18" y="343.5" width="284" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-Ke-jSA">
-                                <rect key="frame" x="18" y="334.5" width="284" height="21"/>
+                                <rect key="frame" x="18" y="314.5" width="284" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -147,6 +151,11 @@
                             <constraint firstItem="sgd-qy-XIi" firstAttribute="trailing" secondItem="YuF-m5-Wlr" secondAttribute="trailing" constant="18" id="oHE-81-sVE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BjQ-aE-6SW"/>
+                    <connections>
+                        <outlet property="AdviseLabel" destination="Pgp-mk-tje" id="wMz-xm-9CB"/>
+                        <outlet property="AmountLabel" destination="EuV-Ke-jSA" id="vv2-VR-T9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLG-nd-jcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
