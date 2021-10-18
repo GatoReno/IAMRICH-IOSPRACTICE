@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var bmiValue = "0.0"
+    var calculator = CalculatorBrain()
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var widthLabel: UILabel!
     
@@ -30,16 +31,15 @@ class ViewController: UIViewController {
     @IBAction func CalculateActionButton(_ sender: UIButton) {
         let w = witdhSlider.value
         let h = heightSlider.value
-        
-        let res = w / (w * h)
-        
-        if(res > 0)
+                        
+        if(w > 0.0 && h > 0.0)
         {
-            bmiValue = String(format: "%.1f", res)
+            calculator.calculateBMI(height: h, weight: w)
+            ResLabel.text = "Last calculation \(calculator.getBMIValue())"
             self.performSegue(withIdentifier: "goToResult", sender: self)
         }else
         {
-            ResLabel.text = String(format: "%.2f", res * 100)
+            ResLabel.text = "No value 💀"
             let secondVC = SecondViewController()
             self.present(secondVC, animated: true, completion: nil)
         }
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
        
         if segue.identifier == "goToResult"{
             let destination = segue.destination as! CocaViewViewController
-            destination.bmiVal = bmiValue
+            destination.bmiVal  = calculator.getBMIValue()
         }
         
     }
