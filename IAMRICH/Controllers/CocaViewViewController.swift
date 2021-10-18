@@ -14,12 +14,12 @@ class CocaViewViewController: UIViewController {
     @IBOutlet weak var AdviseLabel: UILabel!
     
     @IBAction func RecalciulateAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         AmountLabel.text = bmiVal
-        
         
     }
     

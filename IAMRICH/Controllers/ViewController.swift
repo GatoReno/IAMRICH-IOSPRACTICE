@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         heightSlider.value = 0.0
         widthLabel.text =  String(format: "%.2f", witdhSlider.value * 100)
         heightLabel.text =  String(format: "%.2f", heightSlider.value * 100)
-        ResLabel.text = 0.0
+        ResLabel.text = "0.0"
     }
 
 
